@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useParams } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
 import { searchCast } from '../Api/Api';
 import { CastList, CastItem, Image } from '../Cast/CastStyled';
