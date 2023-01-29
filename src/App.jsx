@@ -1,47 +1,41 @@
 import { Route, Routes } from 'react-router-dom';
-import { lazy } from 'react';
+// import { lazy } from 'react';
 import { Layout } from './components/Layout/Layout';
 /*
 /**|======================================
-/**| Impored Components (NOT AS DEFAULT FIX)
+/**| Imported Components (NOT AS DEFAULT FIX)
 /**|======================================
 */
-const Home = lazy(() =>
+const Home = () =>
   import('./pages/Home/Home').then(module => ({
     ...module,
     default: module.Home,
-  }))
-);
-const Movies = lazy(() =>
+  }));
+const Movies = () =>
   import('./pages/Movies/Movies').then(module => ({
     ...module,
     default: module.Movies,
-  }))
-);
-const MovieCard = lazy(() =>
+  }));
+const MovieCard = () =>
   import('./pages/MovieCard/MovieCard').then(module => ({
     ...module,
     default: module.MovieCard,
-  }))
-);
-const Cast = lazy(() =>
+  }));
+const Cast = () =>
   import('./components/Cast/Cast').then(module => ({
     ...module,
     default: module.Cast,
-  }))
-);
-const Reviews = lazy(() =>
+  }));
+const Reviews = () =>
   import('./components/Reviews/Reviews').then(module => ({
     ...module,
     default: module.Reviews,
-  }))
-);
-const Error = lazy(() =>
+  }));
+const Error = () =>
   import('./components/Error/Error').then(module => ({
     ...module,
     default: module.Error,
-  }))
-);
+  }));
 /*
 /**|======================================
 /**| Export App
