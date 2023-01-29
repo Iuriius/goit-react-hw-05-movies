@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { popularMovies } from '../../components/Api/Api';
 import { MovieList } from '../../components/MovieList/MovieList';
 import { Title } from './Home.styled';
@@ -9,8 +9,14 @@ import { Container } from '../../components/Layout/LayoutStyled';
 /**|======================================
 */
 export const Home = () => {
-  useEffect(() => {}, []);
-  const response = popularMovies();
+  const [response, setResponse] = useState(null);
+
+  useEffect(() => {
+    return async function response() {
+      await popularMovies();
+      setResponse();
+    };
+  }, []);
 
   return (
     <Container>
