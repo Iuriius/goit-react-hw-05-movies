@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { popularMovies } from '../../components/Api/Api';
 import { MovieList } from '../../components/MovieList/MovieList';
 import { Title } from './Home.styled';
@@ -7,8 +8,9 @@ import { Container } from '../../components/Layout/LayoutStyled';
 /**| Export Home
 /**|======================================
 */
-export const Home = async () => {
-  const response = await popularMovies();
+export const Home = () => {
+  useEffect(() => {}, []);
+  const response = popularMovies();
 
   return (
     <Container>
