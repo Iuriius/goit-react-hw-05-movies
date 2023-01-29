@@ -7,7 +7,7 @@ import axios from 'axios';
 const fetch = axios.create({
   baseURL: 'https://api.themoviedb.org/3/',
 });
-const popular = 'trending/movie/month';
+const popular = 'trending/movie/week';
 const movieName = 'search/movie';
 /*
 /**|======================================
