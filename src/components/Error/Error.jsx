@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '../Layout/LayoutStyled';
-import { GoBackLink } from '../MovieCard/MovieCardStyled';
-import { Title } from '../Home/Home.styled';
+import { GoBackLink } from '../../pages/MovieCard/MovieCardStyled';
+import { Title } from '../../pages/Home/Home.styled';
 /*
 /**|======================================
 /**| Export Error

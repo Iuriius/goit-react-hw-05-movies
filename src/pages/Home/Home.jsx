@@ -1,7 +1,7 @@
-import { popularMovies } from '../Api/Api';
-import { MovieList } from '../MovieList/MovieList';
-import { Title } from '../Home/Home.styled';
-import { Container } from '../Layout/LayoutStyled';
+import { popularMovies } from '../../components/Api/Api';
+import { MovieList } from '../../components/MovieList/MovieList';
+import { Title } from './Home.styled';
+import { Container } from '../../components/Layout/LayoutStyled';
 /*
 /**|======================================
 /**| Export Home

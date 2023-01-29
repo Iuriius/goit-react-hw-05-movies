@@ -7,19 +7,19 @@ import { Layout } from './Layout/Layout';
 /**|======================================
 */
 const Home = lazy(() =>
-  import('./Home/Home').then(module => ({
+  import('../pages/Home/Home').then(module => ({
     ...module,
     default: module.Home,
   }))
 );
 const Movies = lazy(() =>
-  import('./Movies/Movies').then(module => ({
+  import('../pages/Movies/Movies').then(module => ({
     ...module,
     default: module.Movies,
   }))
 );
 const MovieCard = lazy(() =>
-  import('./MovieCard/MovieCard').then(module => ({
+  import('../pages/MovieCard/MovieCard').then(module => ({
     ...module,
     default: module.MovieCard,
   }))

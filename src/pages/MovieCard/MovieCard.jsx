@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { Outlet, useLocation, useParams } from 'react-router-dom';
-import { searchById } from '../Api/Api';
-import { Container } from '../Layout/LayoutStyled';
+import { searchById } from '../../components/Api/Api';
+import { Container } from '../../components/Layout/LayoutStyled';
 import {
   Image,
   Description,
@@ -10,7 +10,7 @@ import {
   CardWrapper,
   GoBackLink,
 } from './MovieCardStyled';
-import { StyledLink } from '../Layout/LayoutStyled';
+import { StyledLink } from '../../components/Layout/LayoutStyled';
 /*
 /**|======================================
 /**| Export MovieCard

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { searchMovies } from '../Api/Api';
-import { MovieList } from '../MovieList/MovieList';
+import { searchMovies } from '../../components/Api/Api';
+import { MovieList } from '../../components/MovieList/MovieList';
 import { Form, Input, Button } from './Movies.styled';
-import { Container } from '../Layout/LayoutStyled';
+import { Container } from '../../components/Layout/LayoutStyled';
 /*
 /**|======================================
 /**| Export Movies
@@ -34,7 +34,10 @@ export const Movies = () => {
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
-        <Input type="text" onChange={event => setSearchQuery(event.target.value)} />
+        <Input
+          type="text"
+          onChange={event => setSearchQuery(event.target.value)}
+        />
         <Button type="submit">Search</Button>
       </Form>
       <MovieList movieList={movieList} />
