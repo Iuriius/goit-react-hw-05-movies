@@ -9,7 +9,7 @@ import { Container } from '../../components/Layout/LayoutStyled';
 /**|======================================
 */
 export const Home = () => {
-  const [response, setResponse] = useState(null);
+  const [response, setResponse] = useState([]);
 
   useEffect(() => {
     return async function response() {
