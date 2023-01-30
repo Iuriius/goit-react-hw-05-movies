@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Header, StyledLink, Container } from './LayoutStyled';
 /*
@@ -18,10 +18,10 @@ export const Layout = () => {
         </Container>
       </Header>
       <main>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Outlet />
-        </Suspense>
+        <Outlet />
       </main>
     </>
   );
 };
+/* <Suspense fallback={<div>Loading...</div>}>
+</Suspense> */
