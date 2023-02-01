@@ -35,6 +35,7 @@ export const Movies = () => {
     <Container>
       <Form onSubmit={handleSubmit}>
         <Input
+          placeholder="Search your movie here 📽 "
           type="text"
           onChange={event => setSearchQuery(event.target.value)}
         />
