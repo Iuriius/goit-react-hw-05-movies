@@ -15,10 +15,11 @@ export const StyledLink = styled(NavLink)`
   color: cornsilk;
   font-size: larger;
   text-decoration: none;
-  text-shadow: 1px 1px 1px darkblue;
+  text-shadow: 1px 1px 1px darkorange;
   margin: 1rem;
 `;
 export const Container = styled.div`
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1100px;
+  text-align: center;
 `;
