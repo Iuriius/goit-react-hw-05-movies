@@ -1,27 +1,26 @@
 import { useState, useEffect } from 'react';
 import { popularMovies } from '../../components/Api/Api';
 import { MovieList } from '../../components/MovieList/MovieList';
+import { Container } from '../../components/Layout/Layout.styled';
 import { Title } from './Home.styled';
-import { Container } from '../../components/Layout/LayoutStyled';
 /*
 /**|======================================
 /**| Export Home
 /**|======================================
 */
 export const Home = () => {
-  const [response, setResponse] = useState([]);
+  const [movies, setMovies] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    return async function response() {
-      await popularMovies();
-      setResponse();
-    };
+    popularMovies().then(setMovies).catch(setError);
   }, []);
 
   return (
     <Container>
       <Title>Trending today:</Title>
-      {response && <MovieList movieList={response} />}
+      {movies && <MovieList movieList={movies} />}
+      {error && <p>Sorry, something went wrong 😔</p>}
     </Container>
   );
 };

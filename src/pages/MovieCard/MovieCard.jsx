@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { Outlet, useLocation, useParams } from 'react-router-dom';
 import { searchById } from '../../components/Api/Api';
-import { Container } from '../../components/Layout/LayoutStyled';
+import { Container } from '../../components/Layout/Layout.styled';
 import {
   Image,
   Description,
@@ -10,7 +10,7 @@ import {
   CardWrapper,
   GoBackLink,
 } from './MovieCardStyled';
-import { StyledLink } from '../../components/Layout/LayoutStyled';
+import { StyledLink } from '../../components/Layout/Layout.styled';
 /*
 /**|======================================
 /**| Export MovieCard
@@ -61,7 +61,7 @@ export const MovieCard = () => {
     <>
       <Section>
         <Container>
-          <GoBackLink to={refLocation.current ?? '/'}>Go back</GoBackLink>
+          <GoBackLink to={refLocation.current ?? '/'}>🔙 Go back</GoBackLink>
           <CardWrapper>
             <Image
               src={
@@ -86,8 +86,8 @@ export const MovieCard = () => {
       </Section>
       <Section>
         <Container>
-          <StyledLink to={'cast'}>Cast</StyledLink>
-          <StyledLink to={`reviews`}>Reviews</StyledLink>
+          <StyledLink to={'cast'}>🎞 Cast</StyledLink>
+          <StyledLink to={`reviews`}>🎞 Reviews</StyledLink>
         </Container>
       </Section>
       <Section>

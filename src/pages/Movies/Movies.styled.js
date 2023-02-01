@@ -25,7 +25,7 @@ export const Button = styled.button`
   margin-left: 20px;
   font-size: 1rem;
   padding: 0.7rem;
-  background-color: Chocolate;
+  background-color: peru;
   color: cornsilk;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;

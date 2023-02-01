@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
 import { searchReview } from '../Api/Api';
-import { Container } from '../Layout/LayoutStyled';
+import { Container } from '../Layout/Layout.styled';
 import { List } from '../MovieList/MovieList.styled';
 /*
 /**|======================================

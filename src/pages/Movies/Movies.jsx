@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { searchMovies } from '../../components/Api/Api';
 import { MovieList } from '../../components/MovieList/MovieList';
 import { Form, Input, Button } from './Movies.styled';
-import { Container } from '../../components/Layout/LayoutStyled';
+import { Container } from '../../components/Layout/Layout.styled';
 /*
 /**|======================================
 /**| Export Movies

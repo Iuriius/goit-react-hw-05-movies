@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
 import { searchCast } from '../Api/Api';
 import { CastList, CastItem, Image } from '../Cast/CastStyled';
-import { Container } from '../Layout/LayoutStyled';
+import { Container } from '../Layout/Layout.styled';
 /*
 /**|======================================
 /**| Export Cast
@@ -30,7 +30,7 @@ export const Cast = () => {
     toast.error(`Sorry, there's been an error!`);
     return (
       <Container>
-        <p>Something went wrong 😞</p>
+        <p>Sorry, something went wrong 😔</p>
       </Container>
     );
   }

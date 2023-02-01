@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '../Layout/LayoutStyled';
+import { Container } from '../Layout/Layout.styled';
 import { GoBackLink } from '../../pages/MovieCard/MovieCardStyled';
 import { Title } from '../../pages/Home/Home.styled';
 /*
@@ -10,8 +10,8 @@ import { Title } from '../../pages/Home/Home.styled';
 export const Error = () => {
   return (
     <Container>
-      <Title>There's nothing found for this query 😞</Title>
-      <GoBackLink to={'/'}>Back to the main page</GoBackLink>
+      <Title>There's nothing found for this query 😔</Title>
+      <GoBackLink to={'/'}>🎥 Back to the main page</GoBackLink>
     </Container>
   );
 };
