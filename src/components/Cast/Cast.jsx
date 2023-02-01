@@ -46,7 +46,7 @@ export const Cast = () => {
               src={
                 profile_path
                   ? `https://image.tmdb.org/t/p/w500${profile_path}`
-                  : `😞`
+                  : `https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
               }
               alt={name}
             />
