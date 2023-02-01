@@ -9,5 +9,3 @@ export const Title = styled.h1`
 export const OptionsList = styled.ul`
   list-style: none;
 `;
-
-export const Button = styled.button``;

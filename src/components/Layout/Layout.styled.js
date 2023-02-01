@@ -13,6 +13,7 @@ export const Header = styled.header`
 `;
 export const StyledLink = styled(NavLink)`
   color: cornsilk;
+  font-size: larger;
   text-decoration: none;
   text-shadow: 1px 1px 1px darkblue;
   margin: 1rem;
