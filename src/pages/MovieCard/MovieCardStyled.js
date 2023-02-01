@@ -9,8 +9,9 @@ export const Section = styled.section`
 
 export const CardWrapper = styled.div`
   display: flex;
-  background: Chocolates;
+  background: Chocolate;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 0px 50px 0px 50px;
 `;
 
 export const Image = styled.img`
@@ -20,7 +21,7 @@ export const Image = styled.img`
 `;
 
 export const Description = styled.div`
-  color: brown;
+  color: cornsilk;
 `;
 
 export const GoBackLink = styled(NavLink)`
